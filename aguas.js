@@ -13,11 +13,7 @@
 
     let url = `https://api.openweathermap.org/data/2.5/weather?appid=${key}&q=${ciudad}`;
 
-    fetch(url, {
-      headers: {
-        'Authentication': 'Bearer 616629f9acdc3b22b8b09553e632e5da'
-      }
-    })
+    fetch(url)
     
       .then((respuesta) => { return respuesta.json();})
       .then((data) => { 
