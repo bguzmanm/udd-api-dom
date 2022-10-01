@@ -24,6 +24,7 @@
 
     fetch(url)
     .then((respuesta) => {
+      console.log(respuesta);
       return respuesta.json();
     })
     .then((data) => {
